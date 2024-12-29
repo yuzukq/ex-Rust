@@ -4,6 +4,14 @@ fn bigger(a: i32, b: i32) -> i32 {
     // 以下を使ってはいけません：
     // - 他の関数を呼び出す
     // - 他の変数を追加する
+    if a > b {
+        println!("big number is {a}");
+        return a;
+    }
+    else {
+        println!("bigger number is {b}");
+        return b;
+    }
 }
 
 fn main() {
