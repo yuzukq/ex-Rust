@@ -9,6 +9,16 @@
 
 // TODO: 与えられたりんごの注文数の金額を計算する関数を書いてください。
 // fn calculate_price_of_apples(???) -> ??? { ??? }
+fn calculate_price_of_apples(n: u32) -> u32{
+    if n > 40 {
+        return n * 1;
+    }
+    else {
+        return 2 * n;
+    }
+
+}
+
 
 fn main() {
     // この行で関数のテストができます。

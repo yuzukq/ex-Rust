@@ -1,13 +1,13 @@
-fn animal_habitat(animal: &str) -> &str {
+fn animal_habitat(animal: &str) -> &str { //habitat 生息地
     // TODO: 以下の分岐のコンパイルエラーを修正してください。
     let identifier = if animal == "crab" {
         1
-    } else if animal == "gopher" {
-        2.0
+    } else if animal == "gopher" {//ハリネズミ
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        4
     };
 
     // この条件分岐は変更しないでください。
