@@ -6,8 +6,9 @@ RUN mkdir /home/rust && \
     apt-get install -y gcc  \
     git \
     curl && \
-    rm -rf /var/lib/apt/lists && \
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
+    rm -rf /var/lib/apt/lists 
+
+CMD curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
     cargo install -y rustlings
 
 WORKDIR /home/rust
