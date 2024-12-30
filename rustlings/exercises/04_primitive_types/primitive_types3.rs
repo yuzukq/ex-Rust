@@ -1,11 +1,12 @@
 fn main() {
     // TODO: `a`という要素数が100以上の配列を作成してください。
     // let a = ???
+    let a = [3; 101];
 
     if a.len() >= 100 {
-        println!("Wow, that's a big array!");
+        println!("うわー、すごい配列ですね！");
     } else {
-        println!("Meh, I eat arrays like that for breakfast.");
-        panic!("Array not big enough, more elements needed");
+        println!("ああ、私は朝食にそのような配列を食べます。");
+        panic!("配列の大きさが不十分です。より多くの要素が必要です");
     }
 }
